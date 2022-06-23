@@ -1,7 +1,7 @@
 ##fileformat=VCFv4.1
 ##FILTER=<ID=PASS,Description="All filters passed">
-##source=PeedeMAFhg19
-##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##fileDate=20220623
+##source=chimp_maf_to_vcf_pipeline_peede
 ##contig=<ID=1>
 ##contig=<ID=2>
 ##contig=<ID=3>
@@ -24,4 +24,6 @@
 ##contig=<ID=20>
 ##contig=<ID=21>
 ##contig=<ID=22>
-#CHROM  POS     ID      REF     ALT     QUAL    FILTER  INFO    FORMAT  panTro6
+##contig=<ID=X>
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	panTro6

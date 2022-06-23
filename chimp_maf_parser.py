@@ -73,7 +73,7 @@ def extract_calls(maf_file,
         sequences = block_info.keys()
         if reference != list(sequences)[0]:
             continue
-        elif block_info[reference]['size'] <= min_length:
+        elif block_info[reference]['size'] < min_length:
             continue
         else:
             true_len = block_info[reference]['size']

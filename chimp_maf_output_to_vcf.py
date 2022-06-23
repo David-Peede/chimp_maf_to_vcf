@@ -17,8 +17,9 @@ def maf_output_to_VCF(maf_parser_output, header_file):
     Outputs a .txt file to stdout in the VCF format
     """
     outfile = sys.stdout
-    for line in header_file:
-        outfile.write(line)
+    with open(header_file) as infile:
+        for line in infile:
+            outfile.write(line)
     with gzip.open(maf_parser_output, 'rt') as infile:
         for line in infile:
             spline = line.split()
