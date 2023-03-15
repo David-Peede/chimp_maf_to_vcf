@@ -20,7 +20,7 @@ Once `hg19.panTro6.synNet.maf.gz` has been downloaded the next step is to extrac
 
 ```bash
 for CHR in {1..22} X; do
-module load tabix python/3.7.4; python3 maf_parser.py hg19.panTro6.synNet.maf.gz ${CHR} | bgzip > hg19_panTro6_chr${CHR}.txt.gz
+module load tabix python/3.7.4; python3 chimp_maf_parser.py hg19.panTro6.synNet.maf.gz ${CHR} | bgzip > hg19_panTro6_chr${CHR}.txt.gz
 done
 ```
 

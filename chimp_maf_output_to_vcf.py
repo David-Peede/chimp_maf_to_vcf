@@ -20,6 +20,7 @@ def maf_output_to_VCF(maf_parser_output, header_file):
     with open(header_file) as infile:
         for line in infile:
             outfile.write(line)
+    outfile.write('\n')
     with gzip.open(maf_parser_output, 'rt') as infile:
         for line in infile:
             spline = line.split()
